@@ -4,12 +4,14 @@ const cross = document.querySelector(".cross");
 
 const openModal = () => {
   modal.classList.remove("visually-hidden");
+  document.body.style.overflow = "hidden";
   console.log("Модальное окно открыто");
 };
 
 const closeModal = () => {
   modal.classList.add("visually-hidden");
   console.log("Модальное окно закрыто");
+  document.body.style.overflow = "";
 };
 
 burger.addEventListener("click", openModal);

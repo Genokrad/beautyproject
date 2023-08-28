@@ -1,0 +1,17 @@
+.mobile-menu {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  gap: 12px;
+  @media screen and (min-width: 375px) {
+    gap: 24px;
+  }
+  &__modal {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary-backgraund-color);
+  }
+}

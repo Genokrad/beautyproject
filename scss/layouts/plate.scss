@@ -1,0 +1,28 @@
+.plates {
+  // background-color: red;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  &__item {
+    padding: 24px;
+    background-color: var(--secondary-backgraund-color);
+    @media screen and (min-width: 600px) {
+      padding: 35px 67px 35px 60px;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+}

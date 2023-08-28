@@ -1,0 +1,41 @@
+.socials {
+  display: flex;
+  gap: 8px;
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+  // padding-left: 21px;
+  &__link {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--accent-color);
+    cursor: pointer;
+    fill: var(--accent-color);
+    transition: 0.2s;
+    @media screen and (min-width: 768px) {
+      width: 45px;
+      height: 45px;
+    }
+    &:hover {
+      background-color: var(--accent-color);
+      fill: var(--primary-backgraund-color);
+      border: 2px solid var(--primary-backgraund-color);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon {
+    width: 12px;
+
+    @media screen and (min-width: 768px) {
+      width: 22px;
+    }
+  }
+}

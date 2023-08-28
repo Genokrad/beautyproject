@@ -1,0 +1,67 @@
+.action {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 24px;
+    background-color: var(--accent-color);
+    @media screen and (min-width: 768px) {
+      padding: 35px 45px 35px 40px;
+      align-items: center;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white-text-color);
+    @media screen and (min-width: 400px) {
+      font-size: 18px;
+    }
+  }
+  &__text {
+    width: 130px;
+    color: var(--white-text-color);
+  }
+  &__input {
+    border-radius: 30px;
+    padding: 9px 25px;
+    border: none;
+  }
+  &__image {
+    display: none;
+    @media screen and (min-width: 350px) {
+      width: 60px;
+      display: block;
+    }
+    @media screen and (min-width: 400px) {
+      width: 80px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 140px;
+    }
+    &--car {
+      width: 80px;
+      @media screen and (min-width: 768px) {
+        width: 188.7px;
+        height: 100px;
+      }
+    }
+  }
+}

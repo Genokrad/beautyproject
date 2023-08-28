@@ -1,0 +1,21 @@
+.header {
+  background-color: var(--secondary-backgraund-color);
+  width: 100%;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+}
+
+.pc-header {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.mobile-header {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

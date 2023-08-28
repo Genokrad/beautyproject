@@ -1,0 +1,17 @@
+{
+  "name": "beautyproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-scss": "node-sass scss/main.scss css/styles.css --output-style compressed",
+    "scss:watch": "npm run compile-scss -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

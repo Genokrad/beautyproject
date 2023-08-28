@@ -1,0 +1,134 @@
+/* CБРОС СТИЛЕЙ */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* ОБЩИЕ */
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* УБИРАЕМ ПОДЧЕРКИВАНИЕ */
+.decoration {
+  text-decoration: none;
+}
+
+/* УБИРАЕТ ЭФФЕКТ СПИСКА */
+.list {
+  list-style: none;
+}
+
+/* НАСТРАИВАЕМ ПРАВИЛЬНЫй РАЗМЕР БЛОКОВ */
+
+html {
+  box-sizing: border-box;
+}
+
+/* НАСЛЕДОВАНИЕ */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--primary-backgraund-color);
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: normal;
+}
+
+/* СПРЯТАННЫЕ ЭЛЛЕМЕНТЫ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    &--hero {
+      padding-top: 40px;
+    }
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   padding: 94px 0;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   padding: 94px 0;
+  // }
+}
+
+// @media screen and (min-width: 768px) {
+//   .title {
+//     margin-bottom: 50px;
+
+//     font-weight: 700;
+//     font-size: 28px;
+//     line-height: 1.18;
+//     text-align: center;
+//     color: var(--title-text-color);
+//   }
+// }
+
+// @media screen and (max-width: 767px) {
+//   .title {
+//     font-size: 28px;
+//     line-height: 1.18;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .title {
+//     font-size: 36px;
+//     line-height: 1.16;
+//   }
+// }

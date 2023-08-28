@@ -1,0 +1,34 @@
+.categories {
+  background-color: var(--secondary-backgraund-color);
+  padding: 60px 0;
+  &__list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: 500px) {
+      flex-wrap: nowrap;
+      gap: 30px;
+    }
+  }
+  &__item {
+    @media screen and (min-width: 500px) {
+      width: 255px;
+    }
+  }
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  &__sub-list {
+    margin-top: 25px;
+  }
+  &__sub-item {
+  }
+  &__link {
+    font-size: 12px;
+    line-height: 2.33;
+    color: var(--light-gray-text-color);
+  }
+}
